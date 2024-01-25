@@ -40,7 +40,7 @@ describe('Meaghan Lewis\'s Formy test page', () => {
         cy.get('#datepicker').type('20/04/2023').type('{enter}').blur();
     });
 
-    it.only('modal passes', () => {
+    it('modal passes', () => {
         cy.visit('modal');
 
         cy.get('#modal-button').click();
