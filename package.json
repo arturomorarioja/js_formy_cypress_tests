@@ -10,6 +10,6 @@
   "author": "Arturo Mora-Rioja (amri@kea.dk)",
   "license": "Unlicense",
   "devDependencies": {
-    "cypress": "^13.6.3"
+    "cypress": "^13.7.3"
   }
 }

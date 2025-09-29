@@ -2,7 +2,7 @@ describe('Meaghan Lewis\'s Formy test page', () => {
     it('keypress passes', () => {
         cy.visit('keypress');
 
-        cy.get('#name').type('KEA Development');
+        cy.get('#name').type('EK Development');
         cy.get('#button').click();
     });
 
@@ -10,8 +10,8 @@ describe('Meaghan Lewis\'s Formy test page', () => {
         cy.visit('scroll');
 
         cy.get('#name').scrollIntoView();
-        cy.get('#name').type('KEA Development');
-        cy.get('#date').type('20/04/2023');
+        cy.get('#name').type('EK Development');
+        cy.get('#date').type('30/09/2025');
     });
 
     it('new tab passes', () => {
@@ -37,7 +37,7 @@ describe('Meaghan Lewis\'s Formy test page', () => {
     it('datepicker passes', () => {
         cy.visit('datepicker');
 
-        cy.get('#datepicker').type('20/04/2023').type('{enter}').blur();
+        cy.get('#datepicker').type('30/09/2025').type('{enter}').blur();
     });
 
     it('modal passes', () => {
@@ -58,7 +58,7 @@ describe('Meaghan Lewis\'s Formy test page', () => {
         cy.get('#radio-button-3').check();
         cy.get('#checkbox-1').check();
         cy.get('#select-menu').select('4');
-        cy.get('#datepicker').type('20/04/2023').type('{enter}');
+        cy.get('#datepicker').type('30/09/2025').type('{enter}');
         cy.get('a.btn.btn-lg.btn-primary').first().click();
     });
 })
